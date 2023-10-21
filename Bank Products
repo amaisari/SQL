@@ -36,3 +36,10 @@ SELECT product_name
 FROM bank_products
 WHERE product_type="Checking"
 OR product_type="Savings";
+
+#To show a customer deciding they want a savings account with a good interest rate and no monthly fee.SELECT product_name, interest_rate
+FROM bank_products
+WHERE product_type="Savings"
+AND interest_rate>=0.75
+AND monthly_fee=0;
+
