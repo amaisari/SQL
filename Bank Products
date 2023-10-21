@@ -1,4 +1,4 @@
-
+#This project utilizes the following Bank products data:
 
 CREATE TABLE bank_products (
     product_id INTEGER PRIMARY KEY,
@@ -27,13 +27,11 @@ VALUES
     (14, 'Rewards Credit Card', 'Credit Card', 21.99, 0.00, 0.00),
     (15, 'Auto Loan', 'Loan', 4.25, 0.00, 20000.00);
 
-#Select all the bank product names.
-
+#To show statictics on all the bank product names.
 SELECT product_name
 FROM bank_products;
 
 #A customer is interested in opening a Checking or Savings account, but wants more information on the options.
-
 SELECT product_name
 FROM bank_products
 WHERE product_type="Checking"
